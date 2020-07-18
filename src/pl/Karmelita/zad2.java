@@ -9,9 +9,17 @@ import java.util.Scanner;
 
 public class zad2 {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Podaj swoją wagę");
-    float waga=scanner.nextFloat();
-    System.out.println("Podaj swój wzrost w cm");
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj swoją wagę");
+        float waga = scanner.nextFloat();
+        System.out.println("Podaj swój wzrost w cm");
+        float wzrost = scanner.nextInt()/100;
+        float bmi = waga / (wzrost * wzrost);
+        System.out.println("BMI wynosi: "+bmi);
+        if (bmi < 18.5 || bmi > 24.9) {
+            System.out.println("BMI nieoptymalne");
+        } else {
+            System.out.println("BMI optymalne");
+        }
+    }
 }
