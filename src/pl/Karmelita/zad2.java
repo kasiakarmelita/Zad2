@@ -13,7 +13,7 @@ public class zad2 {
         System.out.println("Podaj swoją wagę");
         float waga = scanner.nextFloat();
         System.out.println("Podaj swój wzrost w cm");
-        float wzrost = scanner.nextInt()/100;
+        float wzrost = (float) scanner.nextInt()/100;
         float bmi = waga / (wzrost * wzrost);
         System.out.println("BMI wynosi: "+bmi);
         if (bmi < 18.5 || bmi > 24.9) {
